@@ -1,0 +1,24 @@
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="0005_seeding_products" author="Elkhan Isayev">
+        <insert tableName="products" schemaName="msinventory">
+            <column name="name" value="Product A"/>
+            <column name="description" value="Description for Product A"/>
+            <column name="price" value="100.00"/>
+        </insert>
+        <insert tableName="products" schemaName="msinventory">
+            <column name="name" value="Product B"/>
+            <column name="description" value="Description for Product B"/>
+            <column name="price" value="150.00"/>
+        </insert>
+        <insert tableName="products" schemaName="msinventory">
+            <column name="name" value="Product C"/>
+            <column name="description" value="Description for Product C"/>
+            <column name="price" value="200.00"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>
